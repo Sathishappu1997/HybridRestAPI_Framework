@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.testrunner.runner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.186 sec <<< FAILURE! - in com.testrunner.runner
+Validating the data driven reusable concept(verifying the reusable datadriven testing concept)  Time elapsed: 7.159 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Invlid ID]> but was:<[Data updated successfully]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.StepDefination.Reusable_step.the_in_response_body_is(Reusable_step.java:68)
+	at ?.The "message" in response body is "Data updated successfully"(file:///C:/Users/edwin/Moneycontrolsworkspace/HybridPHPAPIRESTASSURED/src/test/resources/Features/Reusable.feature:6)
+
