@@ -3,84 +3,70 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-08-06T05:51:56.988Z",
+        "start_timestamp": "2020-08-09T18:20:23.561Z",
         "line": 3,
-        "name": "Validating the data driven reusable concept",
+        "name": "Validate the post request using JsonObject",
         "description": "",
-        "id": "verifying-the-reusable-datadriven-testing-concept;validating-the-data-driven-reusable-concept",
+        "id": "validate-the-post-request;validate-the-post-request-using-jsonobject",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1486000000,
+              "duration": 829000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "User has the details",
+            "name": "The user has put method details using JsonObj",
             "match": {
-              "location": "com.StepDefination.Reusable_step.user_has_the_details()"
+              "location": "com.StepDefination.GetUsingJsonObject_Steps.the_user_has_put_method_details_using_json_obj()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4293000000,
+              "duration": 2177000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "The user use \"putapi\" and \"PUT\" http method",
+            "name": "user calls the putapi with put http request using JsonObj",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"putapi\"",
-                  "offset": 13
-                },
-                {
-                  "val": "\"PUT\"",
-                  "offset": 26
-                }
-              ],
-              "location": "com.StepDefination.Reusable_step.the_user_use_and_http_method(java.lang.String,java.lang.String)"
+              "location": "com.StepDefination.GetUsingJsonObject_Steps.user_calls_the_putapi_with_put_http_request_using_json_obj()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Invlid ID]\u003e but was:\u003c[Data updated successfully]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.StepDefination.Reusable_step.the_in_response_body_is(Reusable_step.java:68)\r\n\tat ✽.The \"message\" in response body is \"Data updated successfully\"(file:///C:/Users/edwin/Moneycontrolsworkspace/HybridPHPAPIRESTASSURED/src/test/resources/Features/Reusable.feature:6)\r\n",
-              "duration": 991000000,
-              "status": "failed"
+              "duration": 1000000,
+              "status": "passed"
             },
             "line": 6,
-            "name": "The \"message\" in response body is \"Data updated successfully\"",
+            "name": "The user should recieve status code success using JsonObj",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"message\"",
-                  "offset": 4
-                },
-                {
-                  "val": "\"Data updated successfully\"",
-                  "offset": 34
-                }
-              ],
-              "location": "com.StepDefination.Reusable_step.the_in_response_body_is(java.lang.String,java.lang.String)"
+              "location": "com.StepDefination.GetUsingJsonObject_Steps.the_user_should_recieve_status_code_success_using_json_obj()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
+          },
           {
-            "name": "@reuse"
+            "result": {
+              "duration": 17000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Validating all the header",
+            "match": {
+              "location": "com.StepDefination.GetUsingJsonObject_Steps.validating_all_the_header()"
+            },
+            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "verifying the reusable datadriven testing concept",
+    "name": "validate the post request",
     "description": "",
-    "id": "verifying-the-reusable-datadriven-testing-concept",
+    "id": "validate-the-post-request",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Features/Reusable.feature",
+    "uri": "file:src/test/resources/Features/PostUsingJsonObject.feature",
     "tags": []
   }
 ]

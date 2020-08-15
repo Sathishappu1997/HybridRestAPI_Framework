@@ -11,12 +11,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "title": "edwin",
-    "body": "b10",
-    "author": "c10"
+    "author": "p3",
+    "title": "a23",
+    "body": "56"
 }
 HTTP/1.1 200 OK
-Date: Thu, 06 Aug 2020 22:22:38 GMT
+Date: Sun, 09 Aug 2020 18:20:23 GMT
 Server: Apache
 X-Powered-By: PHP/5.6.40
 Access-Control-Allow-Origin: *

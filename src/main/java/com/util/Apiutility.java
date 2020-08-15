@@ -23,7 +23,7 @@ public class Apiutility {
 		
 		if(request==null) {
 			logger = Logger.getLogger(Apiutility.class);
-			PropertyConfigurator.configure("C:\\Users\\edwin\\Moneycontrolsworkspace\\HybridPHPAPIRESTASSURED\\src\\test\\resources\\Log4j\\log4j.properties");
+			PropertyConfigurator.configure("src/test/resources/Log4j/log4j.properties");
 		
 		
 		PrintStream log=new PrintStream(new FileOutputStream("logdetails.txt"));
@@ -42,7 +42,7 @@ return request;
 	
 	public  static String getConfigvalues(String key) throws IOException {
 		Properties prop=new Properties();
-		FileInputStream fis=new FileInputStream("C:\\Users\\edwin\\Moneycontrolsworkspace\\HybridPHPAPIRESTASSURED\\src\\test\\resources\\properties\\config.properties");
+		FileInputStream fis=new FileInputStream("src/test/resources/properties/config.properties");
          prop.load(fis);	
         return prop.getProperty(key);
          

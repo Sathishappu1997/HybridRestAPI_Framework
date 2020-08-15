@@ -5,7 +5,9 @@ import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
-@CucumberOptions(features= {"src/test/resources/Features/Reusable.feature"},glue= {"com.StepDefination"}, plugin= {"json:target/jsonReports/report.json"})
+@CucumberOptions(features= {"src/test/resources/Features/PostUsingJsonObject.feature"},
+						glue= {"com.StepDefination"},
+						plugin= {"json:target/jsonReports/report.json"})
 
 
 

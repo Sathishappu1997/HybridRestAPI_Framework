@@ -1,61 +1,103 @@
-2020-08-06 17:22:36,173 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://www.change2testautomation.com:443
-2020-08-06 17:22:36,193 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to www.change2testautomation.com:443
-2020-08-06 17:22:37,948 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2020-08-06 17:22:37,950 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
-2020-08-06 17:22:37,950 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2020-08-06 17:22:37,951 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2020-08-06 17:22:37,952 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
-2020-08-06 17:22:37,952 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /api/insert.php HTTP/1.1
-2020-08-06 17:22:37,953 DEBUG [main] wire:73 -  >> "POST /api/insert.php HTTP/1.1[\r][\n]"
-2020-08-06 17:22:37,954 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
-2020-08-06 17:22:37,954 DEBUG [main] wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-2020-08-06 17:22:37,955 DEBUG [main] wire:73 -  >> "Content-Length: 85[\r][\n]"
-2020-08-06 17:22:37,955 DEBUG [main] wire:73 -  >> "Host: www.change2testautomation.com[\r][\n]"
-2020-08-06 17:22:37,955 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2020-08-06 17:22:37,955 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
-2020-08-06 17:22:37,955 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2020-08-06 17:22:37,957 DEBUG [main] wire:73 -  >> "[\r][\n]"
-2020-08-06 17:22:37,957 DEBUG [main] headers:278 - >> POST /api/insert.php HTTP/1.1
-2020-08-06 17:22:37,957 DEBUG [main] headers:281 - >> Accept: */*
-2020-08-06 17:22:37,957 DEBUG [main] headers:281 - >> Content-Type: application/json; charset=UTF-8
-2020-08-06 17:22:37,957 DEBUG [main] headers:281 - >> Content-Length: 85
-2020-08-06 17:22:37,958 DEBUG [main] headers:281 - >> Host: www.change2testautomation.com
-2020-08-06 17:22:37,958 DEBUG [main] headers:281 - >> Connection: Keep-Alive
-2020-08-06 17:22:37,958 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
-2020-08-06 17:22:37,959 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
-2020-08-06 17:22:37,959 DEBUG [main] wire:73 -  >> "{[\r][\n]"
-2020-08-06 17:22:37,959 DEBUG [main] wire:73 -  >> "         "title": "edwin",[\r][\n]"
-2020-08-06 17:22:37,959 DEBUG [main] wire:73 -  >> "        "body": "b10",[\r][\n]"
-2020-08-06 17:22:37,960 DEBUG [main] wire:73 -  >> "        "author": "c10"[\r][\n]"
-2020-08-06 17:22:37,960 DEBUG [main] wire:87 -  >> "    }"
-2020-08-06 17:22:38,417 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2020-08-06 17:22:38,421 DEBUG [main] wire:73 -  << "Date: Thu, 06 Aug 2020 22:22:38 GMT[\r][\n]"
-2020-08-06 17:22:38,422 DEBUG [main] wire:73 -  << "Server: Apache[\r][\n]"
-2020-08-06 17:22:38,422 DEBUG [main] wire:73 -  << "X-Powered-By: PHP/5.6.40[\r][\n]"
-2020-08-06 17:22:38,423 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
-2020-08-06 17:22:38,423 DEBUG [main] wire:73 -  << "Access-Control-Allow-Methods: POST[\r][\n]"
-2020-08-06 17:22:38,425 DEBUG [main] wire:73 -  << "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With[\r][\n]"
-2020-08-06 17:22:38,425 DEBUG [main] wire:73 -  << "Upgrade: h2,h2c[\r][\n]"
-2020-08-06 17:22:38,425 DEBUG [main] wire:73 -  << "Connection: Upgrade[\r][\n]"
-2020-08-06 17:22:38,427 DEBUG [main] wire:73 -  << "Content-Length: 40[\r][\n]"
-2020-08-06 17:22:38,427 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=UTF-8[\r][\n]"
-2020-08-06 17:22:38,427 DEBUG [main] wire:73 -  << "[\r][\n]"
-2020-08-06 17:22:38,428 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2020-08-06 17:22:38,429 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
-2020-08-06 17:22:38,430 DEBUG [main] headers:265 - << Date: Thu, 06 Aug 2020 22:22:38 GMT
-2020-08-06 17:22:38,431 DEBUG [main] headers:265 - << Server: Apache
-2020-08-06 17:22:38,432 DEBUG [main] headers:265 - << X-Powered-By: PHP/5.6.40
-2020-08-06 17:22:38,432 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
-2020-08-06 17:22:38,433 DEBUG [main] headers:265 - << Access-Control-Allow-Methods: POST
-2020-08-06 17:22:38,434 DEBUG [main] headers:265 - << Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
-2020-08-06 17:22:38,434 DEBUG [main] headers:265 - << Upgrade: h2,h2c
-2020-08-06 17:22:38,435 DEBUG [main] headers:265 - << Connection: Upgrade
-2020-08-06 17:22:38,435 DEBUG [main] headers:265 - << Content-Length: 40
-2020-08-06 17:22:38,436 DEBUG [main] headers:265 - << Content-Type: application/json; charset=UTF-8
-2020-08-06 17:22:38,443 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
-2020-08-06 17:22:38,467 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=UTF-8
-2020-08-06 17:22:38,467 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2020-08-06 17:22:38,510 DEBUG [main] wire:87 -  << "{"message":"Data Inserted Successfully"}"
-2020-08-06 17:22:38,513 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7a34b7b8
-2020-08-06 17:22:38,514 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2020-08-06 17:22:38,531  INFO [main] Apiutility:84 - ************responsemessage******************************
+2020-08-09 23:50:25,922 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://www.change2testautomation.com:443
+2020-08-09 23:50:25,941 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to www.change2testautomation.com:443
+2020-08-09 23:50:26,339 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2020-08-09 23:50:26,342 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2020-08-09 23:50:26,343 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2020-08-09 23:50:26,344 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2020-08-09 23:50:26,345 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2020-08-09 23:50:26,346 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /api/insert.php HTTP/1.1
+2020-08-09 23:50:26,347 DEBUG [main] wire:73 -  >> "POST /api/insert.php HTTP/1.1[\r][\n]"
+2020-08-09 23:50:26,351 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2020-08-09 23:50:26,352 DEBUG [main] wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-08-09 23:50:26,353 DEBUG [main] wire:73 -  >> "Content-Length: 41[\r][\n]"
+2020-08-09 23:50:26,353 DEBUG [main] wire:73 -  >> "Host: www.change2testautomation.com[\r][\n]"
+2020-08-09 23:50:26,354 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-08-09 23:50:26,355 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_162)[\r][\n]"
+2020-08-09 23:50:26,355 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-08-09 23:50:26,357 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2020-08-09 23:50:26,358 DEBUG [main] headers:278 - >> POST /api/insert.php HTTP/1.1
+2020-08-09 23:50:26,359 DEBUG [main] headers:281 - >> Accept: */*
+2020-08-09 23:50:26,359 DEBUG [main] headers:281 - >> Content-Type: application/json; charset=UTF-8
+2020-08-09 23:50:26,362 DEBUG [main] headers:281 - >> Content-Length: 41
+2020-08-09 23:50:26,363 DEBUG [main] headers:281 - >> Host: www.change2testautomation.com
+2020-08-09 23:50:26,364 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2020-08-09 23:50:26,365 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_162)
+2020-08-09 23:50:26,366 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2020-08-09 23:50:26,367 DEBUG [main] wire:87 -  >> "{"author":"p3","title":"a23","body":"56"}"
+2020-08-09 23:50:26,631 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-08-09 23:50:26,633 DEBUG [main] wire:73 -  << "Date: Sun, 09 Aug 2020 18:20:23 GMT[\r][\n]"
+2020-08-09 23:50:26,634 DEBUG [main] wire:73 -  << "Server: Apache[\r][\n]"
+2020-08-09 23:50:26,635 DEBUG [main] wire:73 -  << "X-Powered-By: PHP/5.6.40[\r][\n]"
+2020-08-09 23:50:26,635 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-08-09 23:50:26,636 DEBUG [main] wire:73 -  << "Access-Control-Allow-Methods: POST[\r][\n]"
+2020-08-09 23:50:26,636 DEBUG [main] wire:73 -  << "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With[\r][\n]"
+2020-08-09 23:50:26,637 DEBUG [main] wire:73 -  << "Upgrade: h2,h2c[\r][\n]"
+2020-08-09 23:50:26,637 DEBUG [main] wire:73 -  << "Connection: Upgrade[\r][\n]"
+2020-08-09 23:50:26,638 DEBUG [main] wire:73 -  << "Content-Length: 40[\r][\n]"
+2020-08-09 23:50:26,639 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-08-09 23:50:26,643 DEBUG [main] wire:73 -  << "[\r][\n]"
+2020-08-09 23:50:26,644 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2020-08-09 23:50:26,645 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2020-08-09 23:50:26,645 DEBUG [main] headers:265 - << Date: Sun, 09 Aug 2020 18:20:23 GMT
+2020-08-09 23:50:26,646 DEBUG [main] headers:265 - << Server: Apache
+2020-08-09 23:50:26,646 DEBUG [main] headers:265 - << X-Powered-By: PHP/5.6.40
+2020-08-09 23:50:26,647 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2020-08-09 23:50:26,647 DEBUG [main] headers:265 - << Access-Control-Allow-Methods: POST
+2020-08-09 23:50:26,648 DEBUG [main] headers:265 - << Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+2020-08-09 23:50:26,649 DEBUG [main] headers:265 - << Upgrade: h2,h2c
+2020-08-09 23:50:26,649 DEBUG [main] headers:265 - << Connection: Upgrade
+2020-08-09 23:50:26,650 DEBUG [main] headers:265 - << Content-Length: 40
+2020-08-09 23:50:26,650 DEBUG [main] headers:265 - << Content-Type: application/json; charset=UTF-8
+2020-08-09 23:50:26,656 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2020-08-09 23:50:26,680 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=UTF-8
+2020-08-09 23:50:26,681 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-08-09 23:50:26,722 DEBUG [main] wire:87 -  << "{"message":"Data Inserted Successfully"}"
+2020-08-09 23:50:26,724 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3e134896
+2020-08-09 23:50:26,725 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2020-08-09 23:50:26,738  INFO [main] Apiutility:47 - =======Validating Response Header Server==========
+2020-08-09 23:50:26,739  INFO [main] Apiutility:49 - Apache
+2020-08-09 23:50:26,739  INFO [main] Apiutility:51 - =========Response Header Server Validated Successfully=========
+
+2020-08-09 23:50:26,739  INFO [main] Apiutility:53 - =======Validating Response Header Powered-By==========
+2020-08-09 23:50:26,740  INFO [main] Apiutility:55 - PHP/5.6.40
+2020-08-09 23:50:26,740  INFO [main] Apiutility:57 - =========Response Header Powered-By Validated Successfully=========
+
+2020-08-09 23:50:26,740  INFO [main] Apiutility:59 - =======Validating Response Header Access-Control-Allow-Origin==========
+2020-08-09 23:50:26,740  INFO [main] Apiutility:61 - *
+2020-08-09 23:50:26,740  INFO [main] Apiutility:63 - =========Response Header Access-Control-Allow-Origin Validated Successfully=========
+
+2020-08-09 23:50:26,741  INFO [main] Apiutility:65 - =======Validating Response Header Access-Control-Allow-Methods==========
+2020-08-09 23:50:26,741  INFO [main] Apiutility:67 - POST
+2020-08-09 23:50:26,741  INFO [main] Apiutility:69 - =========Response Header Access-Control-Allow-Methods Validated Successfully=========
+
+2020-08-09 23:50:26,741  INFO [main] Apiutility:71 - =======Validating Response Header Access-Control-Allow-Headers==========
+2020-08-09 23:50:26,741  INFO [main] Apiutility:73 - Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+2020-08-09 23:50:26,742  INFO [main] Apiutility:75 - =========Response Header Access-Control-Allow-Headers Validated Successfully=========
+
+2020-08-09 23:50:26,742  INFO [main] Apiutility:77 - =======Validating Response Header Upgrade==========
+2020-08-09 23:50:26,743  INFO [main] Apiutility:79 - h2,h2c
+2020-08-09 23:50:26,743  INFO [main] Apiutility:81 - =========Response Header Upgrade Validated Successfully=========
+
+2020-08-09 23:50:26,743  INFO [main] Apiutility:83 - =======Validating Response Header Connection==========
+2020-08-09 23:50:26,747  INFO [main] Apiutility:85 - Upgrade
+2020-08-09 23:50:26,747  INFO [main] Apiutility:87 - =========Response Header Connection Validated Successfully=========
+
+2020-08-09 23:50:26,747  INFO [main] Apiutility:89 - =======Validating Response Header Content-Length==========
+2020-08-09 23:50:26,748  INFO [main] Apiutility:91 - 40
+2020-08-09 23:50:26,748  INFO [main] Apiutility:93 - =========Response Header Content-Length Validated Successfully=========
+
+2020-08-09 23:50:26,748  INFO [main] Apiutility:95 - =======Validating Response Header Content-Type==========
+2020-08-09 23:50:26,749  INFO [main] Apiutility:97 - application/json; charset=UTF-8
+2020-08-09 23:50:26,749  INFO [main] Apiutility:99 - =========Response Header Content-Type Validated Successfully=========
+
+2020-08-09 23:50:26,749  INFO [main] Apiutility:101 - All the Header are,
+2020-08-09 23:50:26,750  INFO [main] Apiutility:106 - Date : Sun, 09 Aug 2020 18:20:23 GMT
+2020-08-09 23:50:26,750  INFO [main] Apiutility:106 - Server : Apache
+2020-08-09 23:50:26,751  INFO [main] Apiutility:106 - X-Powered-By : PHP/5.6.40
+2020-08-09 23:50:26,752  INFO [main] Apiutility:106 - Access-Control-Allow-Origin : *
+2020-08-09 23:50:26,753  INFO [main] Apiutility:106 - Access-Control-Allow-Methods : POST
+2020-08-09 23:50:26,753  INFO [main] Apiutility:106 - Access-Control-Allow-Headers : Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+2020-08-09 23:50:26,753  INFO [main] Apiutility:106 - Upgrade : h2,h2c
+2020-08-09 23:50:26,754  INFO [main] Apiutility:106 - Connection : Upgrade
+2020-08-09 23:50:26,754  INFO [main] Apiutility:106 - Content-Length : 40
+2020-08-09 23:50:26,755  INFO [main] Apiutility:106 - Content-Type : application/json; charset=UTF-8

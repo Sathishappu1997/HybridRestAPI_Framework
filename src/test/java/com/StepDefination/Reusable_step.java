@@ -51,11 +51,13 @@ public class Reusable_step extends Apiutility{
 		{
 			logger.info("************putmethod******************************");
 			Setvalues_Pojo_Put	 p=new Setvalues_Pojo_Put();
-			response=req.body(p.setvalues_put()).when().put(postresource.getResource());	
+			response=req.body(p.setvalues_put()).when().put(postresource.getResource());
+			
 		}else if(method.equalsIgnoreCase("deletepojo")){
+			
 			logger.info("************deletemethod******************************");
 			Setvalues_Pojo_delete	 p=new Setvalues_Pojo_delete();
-			response=req.body(p.setvalues_delete()).when().put(postresource.getResource());	
+			response=req.body(p.setvalues_delete()).when().delete(postresource.getResource());	
 			
 			
 		}else if(method.equalsIgnoreCase("get")) {
@@ -65,12 +67,12 @@ public class Reusable_step extends Apiutility{
 			response=req.body(p.postpayload()).when().post(postresource.getResource());	
 			
 			
-		}else if(method.equalsIgnoreCase("putload")) {
+		}else if(method.equalsIgnoreCase("putpayload")) {
 			Put_payload	 p=new Put_payload();
 			response=req.body(p.putpayload()).when().put(postresource.getResource());	
 			
 			
-		}else if(method.equalsIgnoreCase("postpayload")) {
+		}else if(method.equalsIgnoreCase("deletepayload")) {
 			Delete_payload	 p=new Delete_payload();
 			response=req.body(p.deletepayload()).when().delete(postresource.getResource());	
 			
@@ -86,7 +88,7 @@ public class Reusable_step extends Apiutility{
 			
 			}else if(method.equalsIgnoreCase("Deletehashmap")) {
 				Post_Put_Delete_HashmapData	 p=new Post_Put_Delete_HashmapData();
-				response=req.body(p.delete_map()).when().put(postresource.getResource());}	
+				response=req.body(p.delete_map()).when().delete(postresource.getResource());}	
 			
 	
 	    
@@ -95,9 +97,10 @@ public class Reusable_step extends Apiutility{
 	@Then("The {string} in response body is {string}")
 	public void the_in_response_body_is(String keyvalue, String Exceptedvalue) {
 		logger.info("************responsemessage******************************");
-		String res=response.asString();
-		JsonPath js=new JsonPath(res);
-		assertEquals(js.get(keyvalue).toString(),Exceptedvalue);
+		/*
+		 * String res=response.asString(); JsonPath js=new JsonPath(res);
+		 */
+		assertEquals(response.jsonPath().get(keyvalue),Exceptedvalue);
 		
 	    
 	}
